@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
-   License: none (public domain)
-*/
+   License: none (public domain)*/
 /* stylelint-disable*/
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.linter{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
@@ -13,7 +10,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 * {
   box-sizing: border-box;
 }
-
 
 ol {
         width: 100%;
@@ -40,7 +36,6 @@ html {
   height: 100%;
 }
 body {
-  margin-top: 2.5em;
   padding: 1.5em;
   background-color: #ffffff;
   min-height: 100%;
@@ -69,6 +64,8 @@ h3 {
 h4 {
   font-size: 1.125em; /* 18px / 16px = 1.125em */
 }
+
+.answer { display:none }
 
 input,
 label,
@@ -165,13 +162,14 @@ ol[aria-hidden="true"] {
 }
 
 
+/* #summary {
+    position: relative;            
+   top: 50%;    
+   vertical-align: middle;                  
+   /* transform: translate(0, -50%) 
+}  */
+ 
 
-#checkout-nav img {
-  width: 1.25em;     /* 20px/16px */
-}
-img {
-  width: 5em;
-}
 #summary-header,
 #summary-items{
   margin-bottom: 0.5em; /* 8/16px */
@@ -239,10 +237,6 @@ fieldset{
   padding: 0.5em;
   border-radius: 0.3125em;
 }
-aside {
-  border-left: 1px solid #3f7f80;
-  padding:  0 0.5em;
-}
 
 #personal-info-page .current-page-heading,
 #delivery-page .current-page-heading,
@@ -255,8 +249,11 @@ input:focus {
   background-color: #f3f5f9;
 }
 
-select {
-  height: 32px;
+img {
+	height: 5rem;
+	margin-right: 1.25rem;
+	width: 4.375rem;
+	border-radius: vrem;
 }
 
 @media screen and (min-width: 50em) { /* 800px/16px */
@@ -276,9 +273,7 @@ select {
     grid-area: header;
     justify-self: left;
   }
-  #checkout-nav {
-    grid-area: checkout-nav;
-  }
+
   #main {
     grid-area: main;
     background-color: #f6eede;
@@ -286,9 +281,11 @@ select {
   }
   #summary {
     grid-area: summary;
+    
+  
   }
 
-  ol[name="city-state-zip"]{
+  /* ol[name="city-state-zip"]{
     width: 50%;
     display: grid;
     grid-template-rows: [city-start state-start]  auto [city-end state-end]
@@ -323,7 +320,7 @@ select {
   }
   #cvv {
     grid-area: cvv;
-  }
+  } */
 
   #summary-items li {
     display: grid;
@@ -341,9 +338,8 @@ select {
     grid-column: 2;
     grid-row : 1;
   }
-  .item-price {
+  .item-value {
     grid-column: 3;
-    grid-row : 1;
   }
   .item-size {
     grid-column: 2;
@@ -356,11 +352,12 @@ select {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .summary-desc {
+  .item-description {
     grid-column: 1;
   }
   .summary-price {
     grid-column: 2;
     justify-self: end;
   }
+ 
 }
