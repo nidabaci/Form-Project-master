@@ -14,9 +14,23 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   box-sizing: border-box;
 }
 
+
+   ol {
+        width: 100%;
+    }
+    ol li {
+        width: 40%;
+        display: inline-block;
+    }
+    
+    ol li > * {
+        width: 100%;
+    }
+
+
 html {
   font-family: Lato, Helvetica, Arial, sans-serif;
-  line-height: 1.5em;  /* 24px / 16px = 1.5em */
+  line-height: 1.5em; 
   background-color: #d75459;
   height: 100%;
 }

@@ -18,16 +18,20 @@
         <fieldset>
           <ol>
             <li>
-              <label for="full-name">First Name</label>
-              <input type="text" name="full-name" id="full-name" required/>
+              <label for="full-name" id="twin">First Name</label>
+              <input type="text" name="full-name" id="full-name" title="Enter your name" required/>
             </li>
             <li>
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" required/>
+                <label for="last-name" >Last Name</label>
+                <input type="text" name="last-name" id="last-name" title="Enter your surname" required/>
+              </li>
+              <li>
+                <label for="zip">State</label>
+                <input type="text" title="Enter your state" name="state" id="state" required/>
               </li>
             <li>
-              <label for="email">Email Address</label>
-              <input type="email" name="email" id="email" required/>
+              <label for="zip">Zip Code</label>
+              <input type="text" pattern="[0-9]{5}" title="Five digit zip code" name="zip" id="zip" required/>
             </li>
             <li>
               <label for="phone-number">Phone Number</label>
