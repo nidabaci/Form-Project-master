@@ -1,8 +1,8 @@
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
-   License: none (public domain)*/
+   License: none (public dopersonal-info)*/
 /* stylelint-disable*/
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.linter{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,cart,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,personal-info,menu,nav,section{display:block}html,.linter{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
 /* Begin site styles below */
@@ -70,7 +70,7 @@ h5 {
   color: #666;
 }
 
-#main {
+#personal-info {
     background-color: #f6eede;
     padding: 1rem;
     margin-bottom: 2rem;
@@ -172,7 +172,7 @@ ol[aria-hidden="true"] {
 } 
 
 
-/* #summary {
+/* #cart {
     position: relative;            
    top: 50%;    
    vertical-align: middle;                  
@@ -180,23 +180,23 @@ ol[aria-hidden="true"] {
 }  */
  
 
-#summary-header,
-#summary-items{
+#cart-header,
+#cart-items{
   margin-bottom: 0.5em; /* 8/16px */
 }
 
-#summary-header {
+#cart-header {
   display: flex;
   justify-content: space-between;
   /* padding-top: 5rem; */
 }
-#summary-items p {
+#cart-items p {
   font-size: 0.875em;
   color: #666;
 }
 
 
-#summary-footer{
+#cart-footer{
   border-top: 1px solid  #aaa;
   padding-top: 0.5em;
 }
@@ -240,7 +240,7 @@ input[name="cvv-number"]{
   width: auto;
 }
 
-#summary a {
+#cart a {
   width: min-content;
 }
 
@@ -272,11 +272,11 @@ img {
   body {
     display: grid;
     /* grid-template-rows: 2em [header-start] max-content [header-end]
-      1.5em [checkout-nav-start summary-start] max-content [checkout-nav-end]
-      1.5em [main-start] max-content [main-end summary-end]; */
-    grid-template-columns: 10% [header-start checkout-nav-start main-start]
-      40% [header-end checkout-nav main-end] 5%
-      [summary-start] 35% [summary-end] 5%;
+      1.5em [checkout-nav-start cart-start] max-content [checkout-nav-end]
+      1.5em [personal-info-start] max-content [personal-info-end cart-end]; */
+    grid-template-columns: 10% [header-start checkout-nav-start personal-info-start]
+      40% [header-end checkout-nav personal-info-end] 5%
+      [cart-start] 35% [cart-end] 5%;
     align-items: start;
   }
 
@@ -285,13 +285,13 @@ img {
     justify-self: left;
   }
 
-  #main {
-    grid-area: main;
+  #personal-info {
+    grid-area: personal-info;
     background-color: #f6eede;
     
   }
-  #summary {
-    grid-area: summary;
+  #cart {
+    grid-area: cart;
     
   
   }
@@ -333,7 +333,7 @@ img {
     grid-area: cvv;
   } */
 
-  #summary-items li {
+  #cart-items li {
     display: grid;
     grid-template-rows: max-content 1fr;
     grid-template-columns: max-content 1fr max-content;
@@ -357,7 +357,7 @@ img {
     grid-row : 2;
   }
 
-  #summary-footer {
+  #cart-footer {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -366,7 +366,7 @@ img {
   .item-description {
     grid-column: 1;
   }
-  .summary-price {
+  .cart-price {
     grid-column: 2;
     justify-self: end;
   }
