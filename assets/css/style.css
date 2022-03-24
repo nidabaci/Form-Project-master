@@ -29,7 +29,6 @@ width: 100%;
     width: 99%;
 }
 
-
 html {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.5em; 
@@ -44,15 +43,17 @@ body {
 h2 {
   padding-bottom: 0.5em;
   font-size: 1.35em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-size: 1.20em; 
   font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 0.8rem;
+  
 }
 
 h4 {
@@ -68,7 +69,7 @@ h5 {
 
 #personal-info {
     background-color: #f6eede;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-bottom: 2rem;
 }
 
@@ -96,6 +97,7 @@ input{
 }
 
 button{
+  margin-top: 0.8rem;
   padding: 0.7rem 0.7em; 
   background-color: #5b8dbf;
   border: none;

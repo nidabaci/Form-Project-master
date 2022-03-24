@@ -9,29 +9,29 @@
    </head>
    <body>
       <main id="personal-info">
-         <h3>Shipping Info</h3>
+         <h2>Shipping Info</h2>
          <form name="shipping-info" action="payment/" aria-labelledby="form-label">
             <fieldset>
             <ol>
                <li>
                   <label for="full-name">First Name</label>
-                  <input type="text" name="full-name" id="full-name" title="Enter your name" required/>
+                  <input type="text" name="full-name" id="full-name" title="Enter your name" placeholder="John" required/>
                </li>
                <li>
                   <label for="last-name" >Last Name</label>
-                  <input type="text" name="last-name" id="last-name" title="Enter your surname" required/>
+                  <input type="text" name="last-name" id="last-name" title="Enter your surname" placeholder="Doe"/>
                </li>
                <li id="twin">
                   <label for="last-name" >Your Address</label>
-                  <input type="text" name="address" id="address" title="Enter your full address " required/>
+                  <input type="text" name="address" id="address" title="Enter your full address" placeholder="Street Name" required/>
                </li>
                <li>
                   <label for="zip">State</label>
-                  <input type="text" title="Enter your state" name="state" id="state" required/>
+                  <input type="text" title="Enter your state" name="state" id="state" required placeholder="Add your state" />
                </li>
                <li>
                   <label for="zip">Zip Code</label>
-                  <input type="text" pattern="[0-9]{5}" title="Five digit zip code" name="zip" id="zip" required/>
+                  <input type="text" pattern="[0-9]{5}" title="Five digit zip code" name="zip" id="zip" required placeholder="xxxxx" />
                </li>
                <li id="twin">
                   <label for="phone-number" >Phone Number</label>

@@ -4,44 +4,39 @@
       <title>New Endri Payment Page</title>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no" />
-      <link rel="stylesheet" href="assets/css/style.css" /> 
+      <link rel="stylesheet" href="../assets/css/style.css" /> 
    </head>
    <body>
       <main id="personal-info">
-         <h3>Shipping Info</h3>
+         <h2>Payment Method</h2>
          <form name="shipping-info" action="payment/" aria-labelledby="form-label">
             <fieldset>
             <ol>
-               <li>
-                  <label for="full-name">First Name</label>
-                  <input type="text" name="full-name" id="full-name" title="Enter your name" required/>
-               </li>
-               <li>
-                  <label for="last-name" >Last Name</label>
-                  <input type="text" name="last-name" id="last-name" title="Enter your surname" required/>
+               <li id="twin">
+                  <label for="cname">Card Holder's Name</label>
+                  <input type="text" name="cardname"  title="Enter your card holders name" placeholder="John Doe" required/>
                </li>
                <li id="twin">
-                  <label for="last-name" >Your Address</label>
-                  <input type="text" name="address" id="address" title="Enter your full address " required/>
-               </li>
-               <li>
-                  <label for="zip">State</label>
-                  <input type="text" title="Enter your state" name="state" id="state" required/>
-               </li>
-               <li>
-                  <label for="zip">Zip Code</label>
-                  <input type="text" pattern="[0-9]{5}" title="Five digit zip code" name="zip" id="zip" required/>
+                  <label for="last-name" >Credit Card Number</label>
+                  <input type="text" name="cnum"  title="Enter your card number" placeholder="xxxx-xxxx-xxxx-xxxx" required/>
                </li>
                <li id="twin">
-                  <label for="phone-number" >Phone Number</label>
-                  <input type="tel" name="phone-number" id="phone-number" required/>
+                  <label for="exp-mo" >Expire Month</label>
+                  <input type="text" name="exp-mo" title="Enter your cards exp month, if it is one digit, add a zero in front of it" pattern="[0-9]{2}" placeholder="xx" required/>
                </li>
                <li>
-                <fieldset class="question">
-                    <input id="question" type="checkbox" name="question" value="1" /><label for="question">Different Billing Address?</label>
-                  </fieldset>
+                  <label for="exo-yr">Exp Year</label>
+                  <input type="text" title="Enter your exp year" pattern="[0-9]{4}" title="Four digit exp year" name="exp-yr" placeholder="20xx" required/>
+               </li>
+               <li>
+                  <label for="zip">CVV</label>
+                  <input type="text" pattern="[0-9]{3}" title="Three digit CVV code" name="cvv" placeholder="xxx" required/>
                </li>
             </ol>
+            </fieldset>
+            <fieldset name="buttons">
+               <button class="button-shrink" type="submit">Place Order Now</button>
+            </fieldset>
          
       </main>
       <!-- RIGHT SECTION -->
@@ -53,7 +48,7 @@
             <ol>
                <li>
                   <a href="https://pixabay.com/images/search/shoes%20/" class="item" title="boots">
-                  <img src="assets/images/pexels-photo-8888234.jpeg" alt="leather-boots"/>
+                  <img src="../assets/images/pexels-photo-8888234.jpeg" alt="leather-boots"/>
                   </a>
                   <h4 class="item-name">Leather Boots</h4>
                   <h5 class="item-size">High heel leather boots.</h5>
@@ -62,7 +57,7 @@
                <li>
              <li>
                 <a href="https://pixabay.com/images/search/purse/" class="item" title="bag">
-                <img src="assets/images/pexels-photo-3908800.jpeg" alt="zara-bag"/>
+                <img src="../assets/images/pexels-photo-3908800.jpeg" alt="zara-bag"/>
                 </a>
                 <h4 class="item-name">ZARA Purse</h4>
                 <h5 class="item-size">Nude Bag S/S season.</h5>
