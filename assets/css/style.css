@@ -19,7 +19,7 @@ ol {
         width: 100%;
 }
 ol li {
-  width: 40%;
+  width: 49%;
   display: inline-block;
 }
     
@@ -28,21 +28,21 @@ width: 100%;
 }
 
 #twin {
-    width: 80%;
+    width: 99%;
 }
 
 
 
 html {
-  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5em; 
-  background-color: #d75459;
+  background-color: #5b8dbf;
   height: 100%;
 }
 body {
   margin-top: 2.5em;
   padding: 1.5em;
-  background-color: #f3f5f9;
+  background-color: #ffffff;
   min-height: 100%;
 }
 
@@ -68,6 +68,7 @@ input,
 label,
 select {
   display: block;
+  padding-bottom: 0.3rem;
 }
 
 input,
@@ -77,9 +78,10 @@ button{
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
-  padding: 0;
-  border: 1px solid #aaa;
-  border-radius: 3px; /* 5px/16px */
+  padding-bottom: 0;
+  border: 1px solid rgb(207, 205, 205);
+  border-radius: 0;
+  background-color: #f3f5f9;
 }
 input,select {
   width: 50%;
@@ -89,17 +91,18 @@ input,select {
 
 button{
   padding: 0.3125em 0.625em ; /* 5px/16px  and 10px/16px*/
-  background-color: #d75459;
+  background-color: #5b8dbf;
   border: none;
   color: white;
-  border-radius: 0.375em; /* 6px/16px */
+  border-radius: 0; 
+  width: 100%;
 }
-.back-button {
-  padding: 0.3125em 0.625em ; /* 5px/16px  and 10px/16px*/
+/* .back-button {
+  padding: 0.3125em 0.625em ;
   border:  1px solid #d75459;
   color: #d75459;
-  border-radius: 0.375em; /* 6px/16px */
-}
+  border-radius: 0.375em; 
+} */
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -221,7 +224,6 @@ input[name="cvv-number"]{
 fieldset{
   padding: 0.5em;
   border-radius: 0.3125em;
-  background: #fdfdfd;
 }
 aside {
   border-left: 1px solid #3f7f80;
@@ -247,24 +249,26 @@ select {
 
   body {
     display: grid;
-    grid-template-rows: 1.5em [header-start] max-content [header-end]
+    grid-template-rows: 2em [header-start] max-content [header-end]
       1.5em [checkout-nav-start summary-start] max-content [checkout-nav-end]
       1.5em [main-start] max-content [main-end summary-end];
-    grid-template-columns: 5% [header-start checkout-nav-start main-start]
-      50% [header-end checkout-nav main-end] 5%
+    grid-template-columns: 10% [header-start checkout-nav-start main-start]
+      40% [header-end checkout-nav main-end] 5%
       [summary-start] 35% [summary-end] 5%;
     align-items: start;
   }
 
   #header { 
     grid-area: header;
-    justify-self: center;
+    justify-self: left;
   }
   #checkout-nav {
     grid-area: checkout-nav;
   }
   #main {
     grid-area: main;
+    background-color: #f6eede;
+    padding:22px;
   }
   #summary {
     grid-area: summary;
