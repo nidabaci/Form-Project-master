@@ -41,19 +41,13 @@ body {
   min-height: 100%;
 }
 
-h1 {
-  font-size: 1.8em; 
-  font-weight: bold;
-}
-
 h2 {
-  font-size: 1.375em; /* 22px / 16px = 1.375em */
-  padding-bottom: 0.5em; /* 8/16px*/
-  
+  padding-bottom: 0.5em;
+  font-size: 1.35em;
 }
 
 h3 {
-  font-size: 1.25em; /* 20px / 16px = 1.25em */
+  font-size: 1.20em; 
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -67,7 +61,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1em;
+  font-size: 1em;
   font-weight:  500;
   color: #666;
 }
@@ -77,6 +71,8 @@ h5 {
     padding: 1rem;
     margin-bottom: 2rem;
 }
+
+/* FOT THE DIFFERENT BILLING ADDRESS */
 .answer { display:none }
 
 input,
@@ -86,26 +82,21 @@ select {
   padding-bottom: 0.3rem;
 }
 
-input,
-select,
-button{ 
+input{ 
   background-color: inherit;
-  font-size: inherit;
-  font-family: inherit;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif, Times, serif, 'Arial Narrow', Arial, sans-serif;
   line-height: inherit;
-  padding-bottom: 0;
   border: 1px solid rgb(207, 205, 205);
   border-radius: 0;
   background-color: white;
-}
-input,select {
   width: 50%;
-  margin-bottom: 0.5em; /* 8/16px*/
-  padding: 0.1875em; /* 3/16px*/
+  margin-bottom: 0.5em; 
+  padding: 0.19em; 
 }
 
 button{
-  padding: 0.3125em 0.625em ; /* 5px/16px  and 10px/16px*/
+  padding: 0.7rem 0.7em; 
   background-color: #5b8dbf;
   border: none;
   color: white;
@@ -132,11 +123,11 @@ input[type="radio"] {
   width: auto;
 }
 
-.checkbox-field,
+/* .checkbox-field,
 .radio-field {
   display: flex;
   align-items: baseline;
-}
+} */
 
 /* nav[aria-hidden="true"],
 aside[aria-hidden="true"],
@@ -184,47 +175,42 @@ ol[aria-hidden="true"] {
 
 #cart-header,
 #cart-items{
-  margin-bottom: 0.5em; /* 8/16px */
+  margin-bottom: 0.5em;
 }
 
 #cart-header {
   display: flex;
   justify-content: space-between;
-  /* padding-top: 5rem; */
+  margin-bottom: 1rem;
 }
-#cart-items p {
-  font-size: 0.875em;
-  color: #666;
-}
-
 
 #cart-footer{
-  border-top: 1px solid  #aaa;
+  border-top: 1px solid  #777b80;
   padding-top: 0.5em;
 }
 
-a {
+/* a {
   text-decoration: none;
   color: inherit;
-}
+} */
 
-figure {
+/* figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 
-.nav-complete-page {
+/* .nav-complete-page {
   color: rgb(63,127,128);
-}
+} */
 
-form {
+/* form {
   display: grid;
   grid-gap: 1.5em;
-}
+} */
 
-fieldset[name="buttons"] {
+/* fieldset[name="buttons"] {
   display: flex;
   justify-content: space-between;
   background-color: inherit;
@@ -260,7 +246,7 @@ fieldset{
 
 input:focus {
   background-color: #f3f5f9;
-}
+} */
 
 img {
 	height: 7rem;
