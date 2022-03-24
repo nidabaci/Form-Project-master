@@ -18,12 +18,16 @@
         <fieldset>
           <ol>
             <li>
-              <label for="full-name" id="twin">First Name</label>
+              <label for="full-name">First Name</label>
               <input type="text" name="full-name" id="full-name" title="Enter your name" required/>
             </li>
             <li>
                 <label for="last-name" >Last Name</label>
                 <input type="text" name="last-name" id="last-name" title="Enter your surname" required/>
+              </li>
+              <li id="twin">
+                <label for="last-name" >Your Address</label>
+                <input type="text" name="address" id="address" title="Enter your full address " required/>
               </li>
               <li>
                 <label for="zip">State</label>
@@ -33,8 +37,8 @@
               <label for="zip">Zip Code</label>
               <input type="text" pattern="[0-9]{5}" title="Five digit zip code" name="zip" id="zip" required/>
             </li>
-            <li>
-              <label for="phone-number">Phone Number</label>
+            <li id="twin">
+              <label for="phone-number" >Phone Number</label>
               <input type="tel" name="phone-number" id="phone-number" required/>
             </li>
             <li class="checkbox-field">
