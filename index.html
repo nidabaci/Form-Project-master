@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en" id="personal-info-page">
+  <head>
+    <title>Checkout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+    <link rel="stylesheet" href="assets/css/screen.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <h1>Checkout</h1>
+    </header>
+    <nav id="checkout-nav">
+      <ol>
+        <li class="nav-complete-page">
+          <figure>
+            <img src="assets/img/person-complete.png" alt="person"/>
+            <figcaption class="nav-heading current-page-heading">Personal Info</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/box.png" alt="shipping box"/>
+            <figcaption class="nav-heading">Delivery</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/card.png" alt="credit card"/>
+            <figcaption class="nav-heading">Payment</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/review.png" alt="review order"/>
+            <figcaption class="nav-heading">Review</figcaption>
+          </figure>
+        </li>
+      </ol>
+    </nav>
+
+    <main id="main">
+      <form name="personal-info" action="delivery/" aria-labelledby="form-label">
+        <fieldset>
+          <h2>Personal Information</h2>
+          <ol>
+            <li>
+              <label for="full-name">Full Name</label>
+              <input type="text" name="full-name" id="full-name" required/>
+            </li>
+            <li>
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" required/>
+            </li>
+            <li>
+              <label for="phone-number">Phone Number</label>
+              <input type="tel" name="phone-number" id="phone-number" required/>
+            </li>
+            <li class="checkbox-field">
+              <input type="checkbox" name="create-account" id="create-account"/>
+              <label for="create-account">Create an account</label>
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset name="buttons">
+          <a href="" class="back-button">Shopping Cart</a>
+          <button type="submit">Delivery Information</button>
+        </fieldset>
+      </form>
+    </main>
+    <aside id="summary">
+      <h2>Summary</h2>
+      <section id="summary-header">
+        <h3>Items</h3>
+        <a href="" id="items-edit">Edit</a>
+      </section>
+      <section id="summary-items">
+        <ol>
+          <li>
+            <a href="https://www.flaticon.com/free-icons/shoes" class="item" title="shoes icons">
+              <img src="assets/img/sneakers.png" alt="sneakers"/>
+            </a>
+            <p class="item-name">Red Sneakers</p>
+            <p class="item-size">Size: 9M</p>
+            <p class="item-price">$59.99</p>
+          </li>
+          <li>
+            <a href="https://www.flaticon.com/free-icons/backpack" class="item" title="backpack icons">
+              <img src="assets/img/backpack.png" ald="backpack"/>
+            </a>
+            <p class="item-name">Large Backpack</p>
+            <p class="item-size">Size: Standard</p>
+            <p class="item-rpice">$24.99</p>
+          </li>
+          <li>
+            <a href="https://www.flaticon.com/free-icons/cap" class="item" title="cap icons">
+              <img src="assets/img/cap.png" alt="cap"/>
+            </a>
+            <p class="item-name">Waterproof Running Cap</p>
+            <p class="item-size">Size: Standard</p>
+            <p class="price">$8.45</p>
+          </li>
+        </ol>
+      </section>
+      <section id="summary-footer">
+        <h4 class="summary-desc">Subtotal</h4>
+        <p class="summary-price">$93.43</p>
+        <h4 class="summary-desc">Shipping</h4>
+        <p class="summary-price">$0.00</p>
+        <h4 class="summary-desc">Sales Tax</h4>
+        <p class="summary-price">$0.00</p>
+        <h4 class="summary-desc">TOTAL</h4>
+        <p class="summary-price">$93.43</p>
+      </section>
+    </aside>
+  <script src="assets/js/site.js"></script>
+  </body>
+</html>
