@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" id="personal-info-page">
+<html lang="en" id="shipping-info-page">
   <head>
     <title>Checkout</title>
     <meta charset="utf-8" />
@@ -14,13 +14,17 @@
     </header>
 
     <main id="main">
-      <form name="personal-info" action="payment/" aria-labelledby="form-label">
+      <form name="shipping-info" action="payment/" aria-labelledby="form-label">
         <fieldset>
           <ol>
             <li>
               <label for="full-name">First Name</label>
               <input type="text" name="full-name" id="full-name" required/>
             </li>
+            <li>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" required/>
+              </li>
             <li>
               <label for="email">Email Address</label>
               <input type="email" name="email" id="email" required/>
