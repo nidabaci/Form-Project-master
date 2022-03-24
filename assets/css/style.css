@@ -18,15 +18,18 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 ol {
         width: 100%;
 }
-   ol li {
-        width: 40%;
-        display: inline-block;
-    }
+ol li {
+  width: 40%;
+  display: inline-block;
+}
     
-    ol li > * {
-        width: 100%;
-    }
+ol li > * {
+width: 100%;
+}
 
+#twin {
+    width: 81%;
+}
 
 
 
