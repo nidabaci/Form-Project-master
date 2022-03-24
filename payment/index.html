@@ -1,115 +1,82 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en" id="shipping-info-page">
    <head>
-      <title>Responsive Check Out Page</title>
-      <link rel="stylesheet" href="../assets/css/style.css">
-      <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+      <title>New Endri Payment Page</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no" />
+      <link rel="stylesheet" href="assets/css/style.css" /> 
    </head>
    <body>
-      <div class="cards">
-         <div class="card">
-            <form action="/confirmation.html" method="post">
-            <form action="#" method="post">
-               <div class="row">
-                  <div class="col">
-                     <h3>Payment Method</h3>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <label for="cname"> Name on Card</label>
-                     <input type="text" id="cname" name="cardname" placeholder="  John More Doe">
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <label for="ccnum"> Credit card number</label>
-                     <input type="text" id="ccnum" name=" cardnumber" placeholder="  xxxx-xxxx-xxxx-xxxx">
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <label for="expmonth"> Exp Month</label>
-                     <input type="text" id="expmonth" name="expmonth" placeholder="  September">
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <label for="expyear"> Exp Year</label>
-                     <input type="text" id="expyear" name="expyear" placeholder="  20xx">
-                  </div>
-                  <div class="col">
-                     <label for="cvv"> CVV</label>
-                     <input type="text" id="cvv" name="cvv" placeholder="  352">
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <input type="submit" value="Place Your Order" formaction="confirmation.html">
-                  </div>
-               </div>
-            </form>
-            </form>
-         </div>
-         <div class="card">
-            <div class="order_summary">
-               <h3>
-               Order Summary</h4>
-               <div class="summary_card">
-                  <div class="card_item">
-                     <div class="product_img">
-                        <img src="https://images.pexels.com/photos/8888234/pexels-photo-8888234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
-                     </div>
-                     <div class="product_info">
-                        <h5>Leather Boots</h5>
-                        <p>High heel leather boots.</p>
-                        <div class="close-btn">
-                           <i class="fa fa-close"></i>
-                        </div>
-                        <div class="product_rate_info">
-                           <h5>$ 140 </h5>
-                           <span class="pqt-minus">-</span>
-                           <span class="pqt">1</span>
-                           <span class="pqt-plus">+</span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="card_item">
-                     <div class="product_img">
-                        <img src="https://images.pexels.com/photos/3908800/pexels-photo-3908800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
-                     </div>
-                     <div class="product_info">
-                        <h5>ZARA Purse</h5>
-                        <p>Nude Bag S/S season.</p>
-                        <div class="close-btn">
-                           <i class="fa fa-close"></i>
-                        </div>
-                        <div class="product_rate_info">
-                           <h5>$ 110 </h5>
-                           <span class="pqt-minus">-</span>
-                           <span class="pqt">1</span>
-                           <span class="pqt-plus">+</span>
-                        </div>
-                     </div>
-                  </div>
-                  <hr />
-                  <div class="order_price">
-                     <p>Order summary </p>
-                     <h5>$400</h5>
-                  </div>
-                  <div class="order_service">
-                     <p>Additional Service</p>
-                     <h5>$10</h5>
-                  </div>
-                  <div class="order_total">
-                     <p>Total Amount</p>
-                     <h4>$250</h4>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <script src="func.js"></script>
+      <main id="personal-info">
+         <h3>Shipping Info</h3>
+         <form name="shipping-info" action="payment/" aria-labelledby="form-label">
+            <fieldset>
+            <ol>
+               <li>
+                  <label for="full-name">First Name</label>
+                  <input type="text" name="full-name" id="full-name" title="Enter your name" required/>
+               </li>
+               <li>
+                  <label for="last-name" >Last Name</label>
+                  <input type="text" name="last-name" id="last-name" title="Enter your surname" required/>
+               </li>
+               <li id="twin">
+                  <label for="last-name" >Your Address</label>
+                  <input type="text" name="address" id="address" title="Enter your full address " required/>
+               </li>
+               <li>
+                  <label for="zip">State</label>
+                  <input type="text" title="Enter your state" name="state" id="state" required/>
+               </li>
+               <li>
+                  <label for="zip">Zip Code</label>
+                  <input type="text" pattern="[0-9]{5}" title="Five digit zip code" name="zip" id="zip" required/>
+               </li>
+               <li id="twin">
+                  <label for="phone-number" >Phone Number</label>
+                  <input type="tel" name="phone-number" id="phone-number" required/>
+               </li>
+               <li>
+                <fieldset class="question">
+                    <input id="question" type="checkbox" name="question" value="1" /><label for="question">Different Billing Address?</label>
+                  </fieldset>
+               </li>
+            </ol>
+         
+      </main>
+      <!-- RIGHT SECTION -->
+      <aside id="cart">
+         <section id="cart-header">
+            <h3>Cart Summary</h3>
+         </section>
+         <section id="cart-items">
+            <ol>
+               <li>
+                  <a href="https://pixabay.com/images/search/shoes%20/" class="item" title="boots">
+                  <img src="assets/images/pexels-photo-8888234.jpeg" alt="leather-boots"/>
+                  </a>
+                  <h4 class="item-name">Leather Boots</h4>
+                  <h5 class="item-size">High heel leather boots.</h5>
+                  <p class="item-price">$130</p>
+               </li>
+               <li>
+             <li>
+                <a href="https://pixabay.com/images/search/purse/" class="item" title="bag">
+                <img src="assets/images/pexels-photo-3908800.jpeg" alt="zara-bag"/>
+                </a>
+                <h4 class="item-name">ZARA Purse</h4>
+                <h5 class="item-size">Nude Bag S/S season.</h5>
+                <p class="price">$110</p>
+             </li></ol>
+         </section>
+         <section id="cart-footer">
+            <h5 class="item-description">Subtotal</h5>
+            <p class="item-value">$240</p>
+            <h5 class="item-description">Additional Service</h5>
+            <p class="item-value">$10.00</p>
+            <h4 class="item-description">Total Amount</h4>
+            <p class="item-value">$250</p>
+         </section>
+      </aside>
    </body>
 </html>
