@@ -28,11 +28,9 @@ width: 100%;
 }
 
 
-
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5em; 
-  background-color: #5b8dbf;
   height: 100%;
 }
 body {
@@ -42,7 +40,7 @@ body {
 }
 
 h1 {
-  font-size: 1.5em; /* 24px / 16px = 1.5em */
+  font-size: 1.8em; 
   font-weight: bold;
 }
 
@@ -62,9 +60,21 @@ h3 {
 }
 
 h4 {
-  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  font-size: 1.12em;
+  font-weight: bold;
 }
 
+h5 {
+    font-size: 1em;
+  font-weight:  500;
+  color: #666;
+}
+
+#main {
+    background-color: #f6eede;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
 .answer { display:none }
 
 input,
@@ -126,7 +136,7 @@ input[type="radio"] {
   align-items: baseline;
 }
 
-nav[aria-hidden="true"],
+/* nav[aria-hidden="true"],
 aside[aria-hidden="true"],
 ol[aria-hidden="true"] {
   display: none;
@@ -146,10 +156,10 @@ ol[aria-hidden="true"] {
 #checkout-nav li::before {
   align-self: center;
   border-bottom: 1px solid;
-  content: "\00a0"; /* white space */
-  margin: 0 0.3125em; /* 5px/16px */
+  content: "\00a0"; 
+  /* margin: 0 0.3125em; 
   width: 100%;
-}
+ } 
 #checkout-nav li:first-child{
   flex: 1 0 auto;
 }
@@ -159,7 +169,7 @@ ol[aria-hidden="true"] {
 
 #checkout-nav li:not(.nav-complete-page)::before{
   color:transparent;
-}
+} 
 
 
 /* #summary {
@@ -178,14 +188,15 @@ ol[aria-hidden="true"] {
 #summary-header {
   display: flex;
   justify-content: space-between;
+  /* padding-top: 5rem; */
 }
 #summary-items p {
   font-size: 0.875em;
   color: #666;
 }
 
-#summary-footer,
-#summary-items {
+
+#summary-footer{
   border-top: 1px solid  #aaa;
   padding-top: 0.5em;
 }
@@ -250,9 +261,9 @@ input:focus {
 }
 
 img {
-	height: 5rem;
+	height: 7rem;
 	margin-right: 1.25rem;
-	width: 4.375rem;
+	width: 6rem;
 	border-radius: vrem;
 }
 
@@ -260,9 +271,9 @@ img {
 
   body {
     display: grid;
-    grid-template-rows: 2em [header-start] max-content [header-end]
+    /* grid-template-rows: 2em [header-start] max-content [header-end]
       1.5em [checkout-nav-start summary-start] max-content [checkout-nav-end]
-      1.5em [main-start] max-content [main-end summary-end];
+      1.5em [main-start] max-content [main-end summary-end]; */
     grid-template-columns: 10% [header-start checkout-nav-start main-start]
       40% [header-end checkout-nav main-end] 5%
       [summary-start] 35% [summary-end] 5%;
@@ -277,7 +288,7 @@ img {
   #main {
     grid-area: main;
     background-color: #f6eede;
-    padding:22px;
+    
   }
   #summary {
     grid-area: summary;
@@ -326,8 +337,8 @@ img {
     display: grid;
     grid-template-rows: max-content 1fr;
     grid-template-columns: max-content 1fr max-content;
-    column-gap: 2%;
-    row-gap: 5%;
+    column-gap: 5%;
+    row-gap: 3%;
   }
 
   .item {
