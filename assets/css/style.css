@@ -15,10 +15,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 
-   ol {
+ol {
         width: 100%;
-    }
-    ol li {
+}
+   ol li {
         width: 40%;
         display: inline-block;
     }
@@ -26,6 +26,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     ol li > * {
         width: 100%;
     }
+
+
 
 
 html {
