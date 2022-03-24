@@ -5,49 +5,20 @@
     <title>Checkout</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-    <link rel="stylesheet" href="assets/css/screen.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
     <header id="header">
-      <h1>Checkout</h1>
+      <h1>Make Your Purchase</h1>
     </header>
-    <nav id="checkout-nav">
-      <ol>
-        <li class="nav-complete-page">
-          <figure>
-            <img src="assets/img/person-complete.png" alt="person"/>
-            <figcaption class="nav-heading current-page-heading">Personal Info</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="assets/img/box.png" alt="shipping box"/>
-            <figcaption class="nav-heading">Delivery</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="assets/img/card.png" alt="credit card"/>
-            <figcaption class="nav-heading">Payment</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="assets/img/review.png" alt="review order"/>
-            <figcaption class="nav-heading">Review</figcaption>
-          </figure>
-        </li>
-      </ol>
-    </nav>
 
     <main id="main">
-      <form name="personal-info" action="delivery/" aria-labelledby="form-label">
+      <form name="personal-info" action="payment/" aria-labelledby="form-label">
         <fieldset>
-          <h2>Personal Information</h2>
           <ol>
             <li>
-              <label for="full-name">Full Name</label>
+              <label for="full-name">First Name</label>
               <input type="text" name="full-name" id="full-name" required/>
             </li>
             <li>

@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.linter{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  line-height: 1.5em;  /* 24px / 16px = 1.5em */
+  background-color: #d75459;
+  height: 100%;
+}
+body {
+  margin-top: 2.5em;
+  padding: 1.5em;
+  background-color: #f3f5f9;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 1.5em; /* 24px / 16px = 1.5em */
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.375em; /* 22px / 16px = 1.375em */
+  padding-bottom: 0.5em; /* 8/16px*/
+}
+
+h3 {
+  font-size: 1.25em; /* 20px / 16px = 1.25em */
+}
+
+h4 {
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+}
+
+input,
+label,
+select {
+  display: block;
+}
+
+input,
+select,
+button{ 
+  background-color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  padding: 0;
+  border: 1px solid #aaa;
+  border-radius: 3px; /* 5px/16px */
+}
+input,select {
+  width: 50%;
+  margin-bottom: 0.5em; /* 8/16px*/
+  padding: 0.1875em; /* 3/16px*/
+}
+
+button{
+  padding: 0.3125em 0.625em ; /* 5px/16px  and 10px/16px*/
+  background-color: #d75459;
+  border: none;
+  color: white;
+  border-radius: 0.375em; /* 6px/16px */
+}
+.back-button {
+  padding: 0.3125em 0.625em ; /* 5px/16px  and 10px/16px*/
+  border:  1px solid #d75459;
+  color: #d75459;
+  border-radius: 0.375em; /* 6px/16px */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+.checkbox-field,
+.radio-field {
+  display: flex;
+  align-items: baseline;
+}
+
+nav[aria-hidden="true"],
+aside[aria-hidden="true"],
+ol[aria-hidden="true"] {
+  display: none;
+}
+
+#checkout-nav ol {
+  display: flex;
+}
+
+#checkout-nav li {
+  display: flex;
+  flex-basis: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#checkout-nav li::before {
+  align-self: center;
+  border-bottom: 1px solid;
+  content: "\00a0"; /* white space */
+  margin: 0 0.3125em; /* 5px/16px */
+  width: 100%;
+}
+#checkout-nav li:first-child{
+  flex: 1 0 auto;
+}
+#checkout-nav li:first-child::before{
+  display: none;
+}
+
+#checkout-nav li:not(.nav-complete-page)::before{
+  color:transparent;
+}
+
+
+
+#checkout-nav img {
+  width: 1.25em;     /* 20px/16px */
+}
+img {
+  width: 5em;
+}
+#summary-header,
+#summary-items{
+  margin-bottom: 0.5em; /* 8/16px */
+}
+
+#summary-header {
+  display: flex;
+  justify-content: space-between;
+}
+#summary-items p {
+  font-size: 0.875em;
+  color: #666;
+}
+
+#summary-footer,
+#summary-items {
+  border-top: 1px solid  #aaa;
+  padding-top: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.nav-complete-page {
+  color: rgb(63,127,128);
+}
+
+form {
+  display: grid;
+  grid-gap: 1.5em;
+}
+
+fieldset[name="buttons"] {
+  display: flex;
+  justify-content: space-between;
+  background-color: inherit;
+}
+ol[name="month-year"]{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+ol[name="month-year"] select,
+ol[name="month-year"] input,
+ol[name="city-state-zip"] li,
+input[name="cvv-number"]{
+  width: auto;
+}
+
+#summary a {
+  width: min-content;
+}
+
+fieldset{
+  padding: 0.5em;
+  border-radius: 0.3125em;
+  background: #fdfdfd;
+}
+aside {
+  border-left: 1px solid #3f7f80;
+  padding:  0 0.5em;
+}
+
+#personal-info-page .current-page-heading,
+#delivery-page .current-page-heading,
+#payment-page .current-page-heading,
+#review-page .current-page-heading {
+  font-weight: 800;
+}
+
+input:focus {
+  background-color: #f3f5f9;
+}
+
+select {
+  height: 32px;
+}
+
+@media screen and (min-width: 50em) { /* 800px/16px */
+
+  body {
+    display: grid;
+    grid-template-rows: 1.5em [header-start] max-content [header-end]
+      1.5em [checkout-nav-start summary-start] max-content [checkout-nav-end]
+      1.5em [main-start] max-content [main-end summary-end];
+    grid-template-columns: 5% [header-start checkout-nav-start main-start]
+      50% [header-end checkout-nav main-end] 5%
+      [summary-start] 35% [summary-end] 5%;
+    align-items: start;
+  }
+
+  #header { 
+    grid-area: header;
+    justify-self: center;
+  }
+  #checkout-nav {
+    grid-area: checkout-nav;
+  }
+  #main {
+    grid-area: main;
+  }
+  #summary {
+    grid-area: summary;
+  }
+
+  ol[name="city-state-zip"]{
+    width: 50%;
+    display: grid;
+    grid-template-rows: [city-start state-start]  auto [city-end state-end]
+      auto [zip-start] auto [zip-end];
+    grid-template-columns: [city-start zip-start] auto [city-end zip-end] 5%
+      [state-start] auto [state-end];
+  }
+  ol[name="city-state-zip"] input,
+  ol[name="city-state-zip"] select,
+  ol[name="expiration-and-cvv"] input,
+  ol[name="expiration-and-cvv"] select {
+    width: 100%;
+  }
+  #city {
+    grid-area: city;
+  }
+  #state {
+    grid-area: state;
+  }
+  #zip {
+    grid-area: zip;
+  }
+
+  ol[name="expiration-and-cvv"] {
+    display: grid;
+    width: 50%;
+    grid-template-rows: [expiration-start cvv-start] auto [expiration-end cvv-end];
+    grid-template-columns: [expiration-start] auto [expiration-end] 10% [cvv-start] auto [cvv-end];
+  }
+  #expiration {
+    grid-area: expiration;
+  }
+  #cvv {
+    grid-area: cvv;
+  }
+
+  #summary-items li {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-columns: max-content 1fr max-content;
+    column-gap: 2%;
+    row-gap: 5%;
+  }
+
+  .item {
+    grid-column: 1;
+    grid-row : span 2;
+  }
+  .item-name {
+    grid-column: 2;
+    grid-row : 1;
+  }
+  .item-price {
+    grid-column: 3;
+    grid-row : 1;
+  }
+  .item-size {
+    grid-column: 2;
+    grid-row : 2;
+  }
+
+  #summary-footer {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .summary-desc {
+    grid-column: 1;
+  }
+  .summary-price {
+    grid-column: 2;
+    justify-self: end;
+  }
+}
