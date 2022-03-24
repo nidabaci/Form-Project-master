@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Responsive Check Out Page</title>
+      <link rel="stylesheet" href="screen.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+   </head>
+   <body>
+      <div class="cards">
+         <div class="card">
+            <form action="/confirmation.html" method="post">
+            <form action="#" method="post">
+               <div class="row">
+                  <div class="col">
+                     <h3>Payment Method</h3>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <label for="cname"> Name on Card</label>
+                     <input type="text" id="cname" name="cardname" placeholder="  John More Doe">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <label for="ccnum"> Credit card number</label>
+                     <input type="text" id="ccnum" name=" cardnumber" placeholder="  xxxx-xxxx-xxxx-xxxx">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <label for="expmonth"> Exp Month</label>
+                     <input type="text" id="expmonth" name="expmonth" placeholder="  September">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <label for="expyear"> Exp Year</label>
+                     <input type="text" id="expyear" name="expyear" placeholder="  20xx">
+                  </div>
+                  <div class="col">
+                     <label for="cvv"> CVV</label>
+                     <input type="text" id="cvv" name="cvv" placeholder="  352">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <input type="submit" value="Place Your Order" formaction="confirmation.html">
+                  </div>
+               </div>
+            </form>
+            </form>
+         </div>
+         <div class="card">
+            <div class="order_summary">
+               <h3>
+               Order Summary</h4>
+               <div class="summary_card">
+                  <div class="card_item">
+                     <div class="product_img">
+                        <img src="https://images.pexels.com/photos/8888234/pexels-photo-8888234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                     </div>
+                     <div class="product_info">
+                        <h5>Leather Boots</h5>
+                        <p>High heel leather boots.</p>
+                        <div class="close-btn">
+                           <i class="fa fa-close"></i>
+                        </div>
+                        <div class="product_rate_info">
+                           <h5>$ 140 </h5>
+                           <span class="pqt-minus">-</span>
+                           <span class="pqt">1</span>
+                           <span class="pqt-plus">+</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card_item">
+                     <div class="product_img">
+                        <img src="https://images.pexels.com/photos/3908800/pexels-photo-3908800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                     </div>
+                     <div class="product_info">
+                        <h5>ZARA Purse</h5>
+                        <p>Nude Bag S/S season.</p>
+                        <div class="close-btn">
+                           <i class="fa fa-close"></i>
+                        </div>
+                        <div class="product_rate_info">
+                           <h5>$ 110 </h5>
+                           <span class="pqt-minus">-</span>
+                           <span class="pqt">1</span>
+                           <span class="pqt-plus">+</span>
+                        </div>
+                     </div>
+                  </div>
+                  <hr />
+                  <div class="order_price">
+                     <p>Order summary </p>
+                     <h5>$400</h5>
+                  </div>
+                  <div class="order_service">
+                     <p>Additional Service</p>
+                     <h5>$10</h5>
+                  </div>
+                  <div class="order_total">
+                     <p>Total Amount</p>
+                     <h4>$250</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="func.js"></script>
+   </body>
+</html>
