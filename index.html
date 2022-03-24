@@ -10,10 +10,11 @@
 
   <body>
     <header id="header">
-      <h1>Shipping Address</h1>
+      <h1>Place Your Personal Information</h1>
     </header>
 
     <main id="main">
+    <h3>Shipping Info</h3>
       <form name="shipping-info" action="payment/" aria-labelledby="form-label">
         <fieldset>
           <ol>
@@ -46,12 +47,49 @@
                 </label>
             </li>
           </ol>
+
+          <h3>Billing Info</h3>
+      <form name="shipping-info" action="payment/" aria-labelledby="form-label">
+        <fieldset>
+          <ol>
+            <li>
+              <label for="full-name">First Name</label>
+              <input type="text" name="full-name" id="full-name" title="Enter your name" required/>
+            </li>
+            <li>
+                <label for="last-name" >Last Name</label>
+                <input type="text" name="last-name" id="last-name" title="Enter your surname" required/>
+              </li>
+              <li id="twin">
+                <label for="last-name" >Your Address</label>
+                <input type="text" name="address" id="address" title="Enter your full address " required/>
+              </li>
+              <li>
+                <label for="zip">State</label>
+                <input type="text" title="Enter your state" name="state" id="state" required/>
+              </li>
+            <li>
+              <label for="zip">Zip Code</label>
+              <input type="text" pattern="[0-9]{5}" title="Five digit zip code" name="zip" id="zip" required/>
+            </li>
+            <li id="twin">
+              <label for="phone-number" >Phone Number</label>
+              <input type="tel" name="phone-number" id="phone-number" required/>
+            </li>
+          </ol>
+
+
         </fieldset>
         <fieldset name="buttons">
-          <button type="submit">Proceed To Payment</button>
+          <button class="button-shrink" type="submit">Proceed To Payment</button>
         </fieldset>
       </form>
     </main>
+
+
+
+
+
     <aside id="summary">
       <h2>Summary</h2>
       <section id="summary-header">
@@ -97,6 +135,6 @@
         <p class="summary-price">$93.43</p>
       </section>
     </aside>
-  <script src="assets/js/site.js"></script>
+  <script src="assets/js/func.js"></script>
   </body>
 </html>
